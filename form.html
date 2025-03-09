@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML form</title>
+		<style>
+			
+		</style>
+
+		<link rel="stylesheet" type="text/css" href="./form-styles.css"/>
+
+	</head>
+	<body>
+		  <div class='form-container' id='form-component'>
+		  	<form autocomplete="off">
+		  		<!-- user name -->
+		  		<input type='text' class='textField' name='user_name' placeholder="User Name" required/>
+		  		<br/>
+		  		<!-- user email -->
+		  		<input  type='email' placeholder="example@email.com" class='textField' name='user_email'/>
+		  		<br/>
+
+		  		<input type='password' placeholder="Password" class='textField' name='user_pass'/>
+		  		<br/>
+			<label>Select a hobby</label>
+				<fieldset>
+					<input type='checkbox' name='football' id='_football'/>
+					<label for='_football'>Football</label>
+					
+					
+		  			<input type='checkbox' name='hockey' id='hockey'/>
+
+		  			<label for='hockey'>Hockey</label>
+					<input type='checkbox' name='tennis' id='tennis'/>
+
+		  			<label for='tennis'>Tennis</label>
+
+				</fieldset>		
+
+				<br/>
+
+				<label>Gender</label>
+		  		<fieldset>
+		  			<input type='radio' id='male' name='gender' value='Male'/>
+			  		<label for='male'>Male</label>
+
+			  		<input type='radio' id='female' name='gender' value='Female'/>
+
+			  		<label for='female'>Female</label>
+		  		</fieldset>
+		  		
+		  		<input type='submit' id='submit_btn'/>
+		  	</form>
+
+		  </div>
+	</body>
+</html>
